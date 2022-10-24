@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INVENTARIO DOMESTICO</title>
+</head>
+<body>
+    <form action="">
+        <h1>LOGIN</h1>
+        <label for="">Usuario</label>
+        <input type="text" name="u" id="">
+        <label for="">Password</label>
+        <input type="password" name="c" id="">
+        <input type="BUTTON" name="INGRESAR" onclick="login(this.form)">
+    </form>
+    <script>
+        function login(form){
+            if (form.u.value=="Romina"){
+                if(form.c.value=="8899"){
+                    location="principal.html";
+                }  else {
+                    alert("Error de Password");
+                }
+            }  else {
+                alert("error de usuario");
+            }
+                
+        }
+    </script>
+</body>
+</html>
